@@ -1,4 +1,4 @@
 My first c program.
 This program has been coded with codeblocks. <br />
--------------------------------------To do---------------------------------------
+-------------------------------------To do--------------------------------------- <br />
 fix current scope error.
