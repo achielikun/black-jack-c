@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1740522615 source:f:\c\blackjack\main.c
+	"logic.h"
+	"card.h"
+	"player.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1740521875 f:\c\blackjack\logic.h
+	"player.h"
+	"player.c"
+
+1740435294 f:\c\blackjack\player.h
+	"card.h"
+
+1740522097 f:\c\blackjack\card.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1741267661 f:\c\blackjack\player.c
+	"logic.h"
+	"card.h"
+	"player.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1740521886 f:\c\blackjack\logic.c
+	"logic.h"
+	"player.h"
+	"player.c"
+	<stdio.h>
+
+1740522059 f:\c\blackjack\card.c
+	"card.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1747638948 source:c:\users\chouchaneachiel\downloads\blackjack\blackjack\main.c
+	"logic.h"
+	"card.h"
+	"player.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1747638948 c:\users\chouchaneachiel\downloads\blackjack\blackjack\logic.h
+	"player.h"
+	"player.c"
+
+1747638948 c:\users\chouchaneachiel\downloads\blackjack\blackjack\player.h
+	"card.h"
+
+1747638948 c:\users\chouchaneachiel\downloads\blackjack\blackjack\card.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1747638948 c:\users\chouchaneachiel\downloads\blackjack\blackjack\player.c
+	"logic.h"
+	"card.h"
+	"player.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
