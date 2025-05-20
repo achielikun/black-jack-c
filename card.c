@@ -24,7 +24,7 @@ void GenerateCard(Card *card) {
         case KING:  card->value = 10; break;
         default:    card->value = 0; break;
     }
-
+}
 
 Card getRandomCard() {
     Rank randomRank = (Rank)(rand() % NUM_RANKS + 1);
@@ -32,7 +32,5 @@ Card getRandomCard() {
 
     Card card = {randomRank, randomSuit, 0};
     GenerateCard(&card);
-}
-
-
+    return card;
 }

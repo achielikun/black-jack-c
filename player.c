@@ -9,13 +9,12 @@
 void initializePlayer(Player *player) {
     player->numCards = 0;
     player->totalValue = 0;
-
+}
 
 void addCardToHand(Player *player, Card card) {
     player->cards[player->numCards] = card;
     player->numCards++;
     player->totalValue += card.value;
-
 
     if (player->totalValue > 21) {
         for (int i = 0; i < player->numCards; i++) {
@@ -63,8 +62,4 @@ void printHand(Player *player, const char *name) {
         printf("  %s of %s (Value: %d)\n", rankName, suitName, player->cards[i].value);
     }
     printf("Total value: %d\n\n", player->totalValue);
-}
-
-
-
 }

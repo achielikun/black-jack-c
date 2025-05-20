@@ -67,3 +67,30 @@
 	<stdlib.h>
 	<time.h>
 
+1747776688 source:c:\users\user\documents\github\black-jack-c\main.c
+	"logic.h"
+	"card.h"
+	"player.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1747777049 c:\users\user\documents\github\black-jack-c\logic.h
+	"player.h"
+
+1747640077 c:\users\user\documents\github\black-jack-c\player.h
+	"card.h"
+
+1747640077 c:\users\user\documents\github\black-jack-c\card.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1747640077 c:\users\user\documents\github\black-jack-c\player.c
+	"logic.h"
+	"card.h"
+	"player.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
