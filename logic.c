@@ -7,7 +7,7 @@
 
 
 
-void playGame() {
+int playGame() {
     Player player, dealer;
     initializePlayer(&player);
     initializePlayer(&dealer);
@@ -22,6 +22,23 @@ void playGame() {
     printHand(&dealer, "Dealer");
 
 
+    int playerBlackjack = (player.totalValue == 21 && player.numCards == 2);
+    int dealerBlackjack = (dealer.totalValue == 21 && dealer.numCards == 2);
+
+    if (playerBlackjack && dealerBlackjack) {
+
+        return OUTCOME_TIE;
+    }
+    else if (playerBlackjack) {
+
+        return OUTCOME_BLACKJACK;
+    }
+    else if (dealerBlackjack) {
+
+        return OUTCOME_LOSS;
+    }
+
+
     char choice;
     while (1) {
         printf("Do you want to hit (h) or stand (s)? ");
@@ -33,11 +50,13 @@ void playGame() {
 
             if (player.totalValue > 21) {
                 printf("Bust! You lose.\n");
-                return;
+                return OUTCOME_LOSS;
             }
-        } else if (choice == 's') {
+        }
+        else if (choice == 's') {
             break;
-        } else {
+        }
+        else {
             printf("Invalid choice. Please enter 'h' or 's'.\n");
         }
     }
@@ -50,15 +69,21 @@ void playGame() {
 
         if (dealer.totalValue > 21) {
             printf("Dealer busts! You win.\n");
-            return;
+            return OUTCOME_WIN;
         }
     }
 
+
     if (player.totalValue > dealer.totalValue) {
-        printf("You win!\n");
-    } else if (player.totalValue < dealer.totalValue) {
-        printf("Dealer wins!\n");
-    } else {
-        printf("It's a tie!\n");
+
+        return OUTCOME_WIN;
+    }
+    else if (player.totalValue < dealer.totalValue) {
+
+        return OUTCOME_LOSS;
+    }
+    else {
+
+        return OUTCOME_TIE;
     }
 }

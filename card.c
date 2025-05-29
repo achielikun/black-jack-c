@@ -27,7 +27,7 @@ void GenerateCard(Card *card) {
 }
 
 Card getRandomCard() {
-    Rank randomRank = (Rank)(rand() % NUM_RANKS + 1);
+    Rank randomRank = (Rank)(rand() % NUM_RANKS);
     Suit randomSuit = (Suit)(rand() % NUM_SUITS);
 
     Card card = {randomRank, randomSuit, 0};
