@@ -35,6 +35,8 @@ int playGame() {
     }
     else if (dealerBlackjack) {
 
+        printf("Dealer has blackjack! You lose.\n");
+
         return OUTCOME_LOSS;
     }
 
@@ -79,6 +81,7 @@ int playGame() {
         return OUTCOME_WIN;
     }
     else if (player.totalValue < dealer.totalValue) {
+            printf("Dealer wins!\n");
 
         return OUTCOME_LOSS;
     }
